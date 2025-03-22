@@ -1,0 +1,7 @@
+huggingface_hub==0.22.2
+transformers
+accelerate
+torch
+gradio
+tiktoken
+openpyxl
