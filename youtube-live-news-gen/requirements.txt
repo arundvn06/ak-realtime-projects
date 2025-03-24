@@ -1,0 +1,8 @@
+!pip install shot-scraper
+!pip install gTTS moviepy pillow mutagen
+
+pip install pandas
+
+Google news and worldcoud:
+pip install google-search-results
+pip install wordcloud

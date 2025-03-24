@@ -1,0 +1,25 @@
+- output: trending.png
+  url: https://www.youtube.com/feed/trending
+  selectors_all:
+  - .ytd-item-section-renderer
+  javascript: |
+    document.body.style.backgroundColor = 'black'
+    document.body.style.color = 'red'
+  padding: 10
+- output: trending_music.png
+  url: https://www.youtube.com/feed/trending?bp=4gINGgt5dG1hX2NoYXJ0cw%3D%3D
+  selectors_all:
+  - .ytd-item-section-renderer
+  javascript: |
+    document.body.style.backgroundColor = 'pink'
+    document.body.style.color = 'green'
+  padding: 10
+- output: trending_films.png
+  url: https://www.youtube.com/feed/trending?bp=4gIKGgh0cmFpbGVycw%3D%3D
+  selectors_all:
+  - .ytd-item-section-renderer
+  javascript: |
+    document.body.style.backgroundColor = 'pink'
+    document.body.style.color = 'green'
+  padding: 10
+ 

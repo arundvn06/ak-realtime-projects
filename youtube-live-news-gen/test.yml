@@ -1,0 +1,17 @@
+- output: indiatoday2.png
+  url: https://www.indiatoday.in/news.html
+  selectors_all:
+  - .NewsList_newssection__mTDE8:nth-of-type(2)
+  javascript: |
+    document.body.style.backgroundColor = 'black'
+    document.body.style.color = 'red'
+  padding: 20
+- output: indiatoday3.png
+  url: https://www.indiatoday.in/news.html
+  selectors_all:
+  - .NewsList_newssection__mTDE8:nth-of-type(3)
+  javascript: |
+    document.body.style.backgroundColor = 'pink'
+    document.body.style.color = 'green'
+  padding: 10
+ 

@@ -1,0 +1,36 @@
+- output: indiatoday2.png
+  url: https://www.indiatoday.in/news.html
+  selectors_all:
+  - .NewsList_newssection__mTDE8:nth-of-type(2)
+  javascript: |
+    document.body.style.backgroundColor = 'black'
+  padding: 20
+- output: indiatoday3.png
+  url: https://www.indiatoday.in/news.html
+  selectors_all:
+  - .NewsList_newssection__mTDE8:nth-of-type(3)
+  javascript: |
+    document.body.style.backgroundColor = 'black'
+  padding: 20
+- output: indiatoday4.png
+  url: https://www.indiatoday.in/news.html
+  selectors_all:
+  - .NewsList_newssection__mTDE8:nth-of-type(4)
+  javascript: |
+    document.body.style.backgroundColor = 'black'
+  padding: 20
+- output: indiatoday5.png
+  url: https://www.indiatoday.in/news.html
+  selectors_all:
+  - .NewsList_newssection__mTDE8:nth-of-type(5)
+  javascript: |
+    document.body.style.backgroundColor = 'black'
+  padding: 20
+- output: indiatoday6.png
+  url: https://www.indiatoday.in/news.html
+  selectors_all:
+  - .NewsList_newssection__mTDE8:nth-of-type(6)
+  javascript: |
+    document.body.style.backgroundColor = 'black'
+  padding: 20
+ 
