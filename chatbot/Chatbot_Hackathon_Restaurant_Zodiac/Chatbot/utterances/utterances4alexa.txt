@@ -1,0 +1,64 @@
+find a restaurant
+get a restaurant near me
+find out best restaurant
+do you know good restaurant
+restaurant
+want to know good restaurant
+what is a good restaurant
+can you find a restaurant
+can you tell good restaurant
+what about good restaurant
+can you tell me what is good restaurant
+what is your take on good restaurant
+find a good restaurant
+find a best restaurant
+please repeat find a restaurant
+please state good restaurant
+I am looking for a {cost} {cuisine} in {location} what is the best option
+find {cost} restaurant
+find {cost} restaurant near me
+find {cuisine} restaurant
+find {cuisine} near me
+find {cuisine} restaurant near me
+find a restaurant in {location}
+find a {cost} restaurant in {location}
+find a best {cuisine} in {location}
+find {cost} {cuisine} in {location}
+find a good restaurant in {location}
+find a good restaurant nearby me
+find a good {cuisine} in {location}
+what is a good restaurant in {location}
+what is good restaurant near me
+let me know good restaurant
+let me know good restaurant in {location}
+let me know {cost} {cuisine} in {location}
+let me know {cost} {cuisine}is restaurant in {location}
+please tell me what is the best restaurant
+could you please find a best restaurant
+whats the best restaurant
+what is good restaurant
+I am looking for {cost} {cuisine} in {location}
+I am looking for {cuisine} {cost} in {location}
+in {location} {cost} {cuisine}
+{cost} {cuisine} in {location}
+{cuisine} in {location} {cost}
+restaurant in {location} {cuisine}
+{cost} {cuisine}
+{cuisine} in {location}
+best {cuisine} in {location}
+good {cuisine} in {location}
+best restaurant in {location}
+good restaurant in {location}
+best {cuisine} restaurant
+good {cuisine} restaurant
+{cuisine}
+{cost}
+{location}
+{cuisine} {cost}
+{cost} {cuisine}
+{cuisine} {location}
+{location} {cuisine}
+{cost} {location}
+{location} {cost}
+{cost} {cuisine} {location}
+{location} {cuisine} {cost}

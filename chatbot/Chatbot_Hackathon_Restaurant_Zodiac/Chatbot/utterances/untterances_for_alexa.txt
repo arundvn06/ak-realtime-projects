@@ -1,0 +1,50 @@
+open my zodiac sign
+get my zodiac sign
+find out what my zodiac sign is
+do you know what my zodiac sign is
+zodiac sign
+want to know my zodiac sign
+what is my zodiac sign
+can you give my zodiac sign
+can you tell my zodiac sign
+what about my zodiac sign
+can you tell me what my zodiac sign is
+what is your take on my zodiac sign
+say my zodiac sign
+tell my zodiac sign once more
+please repeat my zodiac sign
+please state my zodiac sign once more
+i was born on {day} {month} {year} what is my zodiac sign
+tell zodiac sign for my birthday
+for my birthday please tell me my zodiac sign
+tell me my birthday zodiac sign
+tell me my zodiac sign for my birthday
+what is my zodiac sign
+let me know my zodiac sign
+what about my zodiac sign
+please tell me what my zodiac sign is based on my birthday
+could you please tell me what my zodiac sign is
+whats the zodiac sign
+what is my zodiac sign
+i was born on {day} {month} {year}
+i was born on {month} {day} {year}
+i was born on {year} {month} {day}
+i was born on {day} {month}
+i was born on {month} {day}
+i was born on {month} {year}
+in {month} of {year} i was born
+i was born in {month}
+i was born on {year}
+i was born on {day}
+my birth day is on {day} {month} {year}
+my birthday is on {day} {month} {year}
+my birthday is {month} {day} {year}
+{month}
+{day}
+{year}
+{day} {month}
+{month} {day}
+{month} {year}
+{year} {month}
+{year} {month} {day}
+{day} {month} {year}

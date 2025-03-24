@@ -1,0 +1,16 @@
+cost,cuisine,location,name
+cheap,Indian,Hyderabad,shaghouse
+medium,Indian,Hyderabad,thangedu
+expensive,Indian,Hyderabad,Paradise
+cheap,Indian,Banglore,Udipi
+medium,Indian,Banglore,Tamil Ruchulu
+expensive,Indian,Banglore,Green park
+cheap,Indian,Visakhaptnam,Bay view
+medium,Indian,Visakhaptnam,Kamath
+expensive,Indian,Visakhaptnam,Dhaspalla
+cheap,Italian,Hyderabad,fusion 9
+medium,Italian,Hyderabad,fletchazo
+expensive,Italian,Hyderabad,ITC kohinur
+cheap,Maxican,Hyderabad,ABBQ
+medium,Maxican,Hyderabad,BBQ
+expensive,Maxican,Hyderabad,lemon Tree

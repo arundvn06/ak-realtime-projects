@@ -1,0 +1,115 @@
+﻿utterance,intent
+find a restaurant,restaurant
+get a restaurant near me,restaurant
+find out best restaurant,restaurant
+do you know good restaurant,restaurant
+restaurant,restaurant
+want to know good restaurant,restaurant
+what is a good restaurant,restaurant
+can you find a restaurant,restaurant
+can you tell good restaurant,restaurant
+what about good restaurant,restaurant
+can you tell me what is good restaurant,restaurant
+what is your take on good restaurant,restaurant
+find a good restaurant,restaurant
+find a best restaurant,restaurant
+please repeat find a restaurant,restaurant
+please state good restaurant,restaurant
+I am looking for a $cost $cuisine in $location what is the best option,restaurant
+find $cost restaurant,restaurant
+find $cost restaurant near me,restaurant
+find $cuisine restaurant,restaurant
+find $cuisine near me,restaurant
+find $cuisine restaurant near me,restaurant
+find a restaurant in $location,restaurant
+find a $cost restaurant in $location,restaurant
+find a best $cuisine in $location,restaurant
+find $cost $cuisine in $location,restaurant
+find a good restaurant in $location,restaurant
+find a good restaurant nearby me,restaurant
+find a good $cuisine in $location,restaurant
+what is a good restaurant in $location,restaurant
+what is good restaurant near me,restaurant
+let me know good restaurant,restaurant
+let me know good restaurant in $location,restaurant
+let me know $cost $cuisine in $location,restaurant
+let me know $cost $cuisineis restaurant in $location,restaurant
+please tell me what is the best restaurant,restaurant
+could you please find a best restaurant,restaurant
+whats the best restaurant,restaurant
+what is good restaurant,restaurant
+I am looking for $cost $cuisine in $location,restaurant
+I am looking for $cuisine $cost in $location,restaurant
+in $location $cost $cuisine,restaurant
+$cost $cuisine in $location,restaurant
+$cuisine in $location $cost,restaurant
+restaurant in $location $cuisine,restaurant
+$cost $cuisine,restaurant
+$cuisine in $location,restaurant
+best $cuisine in $location,restaurant
+good $cuisine in $location,restaurant
+best restaurant in $location,restaurant
+good restaurant in $location,restaurant
+best $cuisine restaurant,restaurant
+good $cuisine restaurant,restaurant
+$cuisine,restaurant
+$cost,restaurant
+$location,restaurant
+$cuisine $cost,restaurant
+$cost $cuisine,restaurant
+$cuisine $location,restaurant
+$location $cuisine,restaurant
+$cost $location,restaurant
+$location $cost,restaurant
+$cost $cuisine $location,restaurant
+$location $cuisine $cost,restaurant
+open my zodiac sign,zodiac
+get my zodiac sign,zodiac
+find out what my zodiac sign is,zodiac
+do you know what my zodiac sign is,zodiac
+zodiac sign,zodiac
+want to know my zodiac sign,zodiac
+what is my zodiac sign,zodiac
+can you give my zodiac sign,zodiac
+can you tell my zodiac sign,zodiac
+what about my zodiac sign,zodiac
+can you tell me what my zodiac sign is,zodiac
+what is your take on my zodiac sign,zodiac
+say my zodiac sign,zodiac
+tell my zodiac sign once more,zodiac
+please repeat my zodiac sign,zodiac
+please state my zodiac sign once more,zodiac
+i was born on $day $month $year what is my zodiac sign,zodiac
+tell zodiac sign for my birthday,zodiac
+for my birthday please tell me my zodiac sign,zodiac
+tell me my birthday zodiac sign,zodiac
+tell me my zodiac sign for my birthday,zodiac
+what is my zodiac sign,zodiac
+let me know my zodiac sign,zodiac
+what about my zodiac sign,zodiac
+please tell me what my zodiac sign is based on my birthday,zodiac
+could you please tell me what my zodiac sign is,zodiac
+whats the zodiac sign,zodiac
+what is my zodiac sign,zodiac
+i was born on $day $month $year,zodiac
+i was born on $month $day $year,zodiac
+i was born on $year $month $day,zodiac
+i was born on $day $month,zodiac
+i was born on $month $day,zodiac
+i was born on $month $year,zodiac
+in $month of $year i was born,zodiac
+i was born in $month,zodiac
+i was born on $year,zodiac
+i was born on $day,zodiac
+my birth day is on $day $month $year,zodiac
+my birthday is on $day $month $year,zodiac
+my birthday is $month $day $year,zodiac
+$month,zodiac
+$day,zodiac
+$year,zodiac
+$day $month,zodiac
+$month $day,zodiac
+$month $year,zodiac
+$year $month,zodiac
+$year $month $day,zodiac
+$day $month $year,zodiac
