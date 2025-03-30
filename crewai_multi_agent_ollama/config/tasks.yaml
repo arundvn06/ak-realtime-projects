@@ -1,0 +1,22 @@
+research_task:
+  description: >
+    Conduct a thorough research about {topic}
+    Make sure you find any interesting and relevant information given
+    the current year is {current_year}.
+  expected_output: >
+    A list with 10 bullet points of the most relevant information about {topic}
+  agent: researcher
+
+newsletter_writer_task:
+  description: >
+    Write a newsletter article about {topic}
+  expected_output: >
+    A newsletter article about {topic}
+  agent: newsletter_writer
+
+newsletter_editor_task:
+  description: >
+    Write a newsletter article about {topic}
+  expected_output: >
+    A newsletter article about {topic}
+  agent: newsletter_editor
