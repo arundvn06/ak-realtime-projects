@@ -6,7 +6,7 @@ from crewai import Agent, Task, Crew
 from langchain_community.chat_models import ChatOpenAI
 
 
-st.set_page_config(page_title="Personalized Nutrition Advisor by DrylanD", page_icon="🥗", layout="wide")
+st.set_page_config(page_title="Personalized Nutrition Advisor sponsored by DrylanD Group", page_icon="🥗", layout="wide")
 
 # Load environment variables
 load_dotenv()
@@ -147,7 +147,7 @@ def app():
     """Main Streamlit application."""
     #st.set_page_config(page_title="Personalized Nutrition Advisor", layout="wide")
     
-    st.title("🥗 Your Personalized Nutrition Advisor by DrylanD")
+    st.title("🥗 Your Personalized Nutrition Advisor sponsored by DrylanD Group")
     st.markdown("""
     Get a detailed nutrition plan based on your demographics, health conditions, and preferences.
     Our AI team of nutrition specialists will create a personalized recommendation just for you.
