@@ -1,6 +1,5 @@
 streamlit
 python-dotenv
 crewai
-crewai-tools
-langchain-openai
 langchain-community
+pysqlite3-binary
