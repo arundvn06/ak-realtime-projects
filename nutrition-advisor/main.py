@@ -8,6 +8,10 @@ from langchain_community.chat_models import ChatOpenAI
 
 st.set_page_config(page_title="Personalized Nutrition Advisor sponsored by DrylanD Group", page_icon="🥗", layout="wide")
 
+__import__('pysqlite3')
+import sys
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+
 # Load environment variables
 load_dotenv()
 os.environ["OPENAI_API_KEY"] = "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"       #Groq API key
