@@ -3,5 +3,11 @@ python-dotenv
 crewai
 langchain-community
 #pysqlite3-binary
+crewai[tools]
+crewai_tools
+#crewai.tools
 chroma-hnswlib==0.7.5
 chromadb==0.5.4
+setuptools
+langchain_groq
+duckduckgo-search

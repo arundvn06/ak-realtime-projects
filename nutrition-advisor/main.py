@@ -2,28 +2,65 @@ import os
 import streamlit as st
 from dotenv import load_dotenv
 from crewai import Agent, Task, Crew
+#from crewai import Tool
+#from crewai_tools import SerperDevTool
+#from crewai.tools import BaseTool
+from langchain_core.tools import BaseTool
+from langchain_community.tools import DuckDuckGoSearchRun
+
 #from crewai import LLM
 from langchain_community.chat_models import ChatOpenAI
+#from langchain_openai import ChatOpenAI
+from langchain_groq import ChatGroq
 
 
 st.set_page_config(page_title="Personalized Nutrition Advisor sponsored by DrylanD Group", page_icon="🥗", layout="wide")
 
-__import__('pysqlite3')
-import sys
-sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
-
 # Load environment variables
 load_dotenv()
-os.environ["OPENAI_API_KEY"] = "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"       #Groq API key
+
+#print('dbname2:', st.secrets.db_username)
+#print('dbname1:', st.secrets["db_username"])
+os.environ["SERPER_API_KEY"] = "d1ddc1303a097bb484d60afa6778b5f1fb965ce7f0b78e7037ccce56122c112c"
+os.environ["LITELLM_API_KEY"] = "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"
+#os.environ["OPENAI_API_KEY"] = st.secrets.get("GROQ_API_KEY", "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")       #Groq API key
 #os.environ["OPENAI_BASE_URL"] = "https://api.groq.com/openai/v1"
-os.environ['GROQ_API_KEY'] = "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"
+os.environ['GROQ_API_KEY'] = st.secrets.get("GROQ_API_KEY", "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")
+
+
+class MyCustomDuckDuckGoTool(BaseTool):
+    name: str = "DuckDuckGo Search Tool"
+    description: str = "Search the web for a given query."
+
+    def _run(self, query: str) -> str:
+        # Implement DuckDuckGoSearchRun here
+        search = DuckDuckGoSearchRun()
+        return search.invoke(query)
+
+search_tool_duck = MyCustomDuckDuckGoTool()
+
+
+search = DuckDuckGoSearchRun()
+
+#search_tool_serp = SerperDevTool()
+
+search_tool = [search]
+
+
 
 def get_llm_openai():
-    return ChatOpenAI(model_name="groq/llama3-8b-8192")
+    return ChatOpenAI(model_name="groq/llama3-8b-8192")   # this is from langchain_community.chat_models
+    #return ChatOpenAI(api_key="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", model="groq/llama3-8b-8192")  #this is from langchain_openai
+
+def get_llm_groq():
+    return ChatGroq(
+        model="llama3-8b-8192",  # Or another Groq model
+        api_key="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"
+       )
 
 def create_agents():
     """Create the specialized nutrition agents."""
-    llm = get_llm_openai()
+    llm = get_llm_groq()
     
     # Nutrition Researcher
     nutritionist = Agent(
@@ -33,6 +70,8 @@ def create_agents():
                     nutrient interactions, and dietary requirements across different health conditions. 
                     Your recommendations are always backed by peer-reviewed research.''',
         llm=llm,
+        tools=search_tool,
+        allow_delegation=True,
         verbose=True
     )
     
@@ -44,6 +83,8 @@ def create_agents():
                     nutrition-related aspects of various medical conditions. You understand 
                     medication-food interactions and how to optimize nutrition within medical constraints.''',
         llm=llm,
+        tools=search_tool,
+        allow_delegation=True,
         verbose=True
     )
     
@@ -55,8 +96,13 @@ def create_agents():
                     practical eating plans. You have extensive knowledge of food preparation, 
                     nutrient preservation, and food combinations that optimize both health and enjoyment.''',
         llm=llm,
+        allow_delegation=True,
         verbose=True
     )
+    
+    # Set coworkers
+    #nutritionist.coworkers = [medical_specialist]
+    #medical_specialist.coworkers = [diet_planner]
     
     return nutritionist, medical_specialist, diet_planner
 
@@ -78,7 +124,9 @@ def create_tasks(nutritionist, medical_specialist, diet_planner, user_info):
             2. Macronutrient distribution
             3. Meal timing and frequency recommendations''',
         agent=nutritionist,
-        expected_output="A comprehensive nutritional profile with scientific rationale"
+        expected_output="A comprehensive nutritional profile with scientific rationale",
+        expected_time=2,
+        priority=1
     )
     
     # Second task: Analyze medical conditions and adjust nutritional recommendations
@@ -95,7 +143,9 @@ def create_tasks(nutritionist, medical_specialist, diet_planner, user_info):
             ''',
         agent=medical_specialist,
         context=[demographics_research],
-        expected_output="A detailed analysis of medical nutrition therapy adjustments"
+        expected_output="A detailed analysis of medical nutrition therapy adjustments",
+        expected_time=3,
+        priority=2
     )
     
     # Third task: Create the comprehensive diet plan
@@ -113,7 +163,9 @@ def create_tasks(nutritionist, medical_specialist, diet_planner, user_info):
             ''',
         agent=diet_planner,
         context=[demographics_research, medical_analysis],
-        expected_output="A comprehensive, practical, and personalized nutrition plan"
+        expected_output="A comprehensive, practical, and personalized nutrition plan",
+        expected_time=2,
+        priority=3
     )
     
     return [demographics_research, medical_analysis, diet_plan]
