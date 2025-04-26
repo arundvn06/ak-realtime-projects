@@ -120,9 +120,11 @@ def create_tasks(nutritionist, medical_specialist, diet_planner, user_info):
             - Goals: {user_info['goals']}
             
             Provide detailed nutritional requirements including:
-            1. Caloric needs 
-            2. Macronutrient distribution
-            3. Meal timing and frequency recommendations''',
+            1. Caloric needs (basal and adjusted for activity)
+            2. Macronutrient distribution (proteins, carbs, fats)
+            3. Key micronutrients particularly important for this demographic
+            4. Hydration requirements
+            5. Meal timing and frequency recommendations''',
         agent=nutritionist,
         expected_output="A comprehensive nutritional profile with scientific rationale",
         expected_time=5,
@@ -140,6 +142,8 @@ def create_tasks(nutritionist, medical_specialist, diet_planner, user_info):
             1. Specific nutrients to increase or limit based on each condition
             2. Food-medication interactions to avoid
             3. Potential nutrient deficiencies associated with these conditions/medications
+            4. Foods that may help manage symptoms or improve outcomes
+            5. Foods to strictly avoid
             ''',
         agent=medical_specialist,
         context=[demographics_research],
@@ -159,7 +163,12 @@ def create_tasks(nutritionist, medical_specialist, diet_planner, user_info):
             Develop a comprehensive nutrition plan that includes:
             1. Specific foods to eat daily, weekly, and occasionally with portion sizes
             2. A 7-day meal plan with specific meals and recipes
-            3. Meal preparation tips and simple recipes
+            3. Grocery shopping list with specific items
+            4. Meal preparation tips and simple recipes
+            5. Eating out guidelines and suggested restaurant options/orders
+            6. Supplement recommendations if necessary (with scientific justification)
+            7. Hydration schedule and recommended beverages
+            8. How to monitor progress and potential adjustments over time
             ''',
         agent=diet_planner,
         context=[demographics_research, medical_analysis],
