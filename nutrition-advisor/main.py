@@ -125,7 +125,7 @@ def create_tasks(nutritionist, medical_specialist, diet_planner, user_info):
             3. Meal timing and frequency recommendations''',
         agent=nutritionist,
         expected_output="A comprehensive nutritional profile with scientific rationale",
-        expected_time=2,
+        expected_time=5,
         priority=1
     )
     
@@ -144,7 +144,7 @@ def create_tasks(nutritionist, medical_specialist, diet_planner, user_info):
         agent=medical_specialist,
         context=[demographics_research],
         expected_output="A detailed analysis of medical nutrition therapy adjustments",
-        expected_time=3,
+        expected_time=10,
         priority=2
     )
     
@@ -164,7 +164,7 @@ def create_tasks(nutritionist, medical_specialist, diet_planner, user_info):
         agent=diet_planner,
         context=[demographics_research, medical_analysis],
         expected_output="A comprehensive, practical, and personalized nutrition plan",
-        expected_time=2,
+        expected_time=5,
         priority=3
     )
     
